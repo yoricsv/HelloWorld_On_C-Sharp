@@ -13,7 +13,7 @@
   * the namespace, we don't need to write full adress.                                    *
   * EXP: Insted Console.Writeline(); we can write only WriteLine();                      *
   *****************************************************************************************
-  * SYSTEM - NAME of NAMESPACE we must use if we wanna have access to features of console *
+  * SYSTEM - name of namespace we must use if we wanna have access to features of console *
   *          or other                                                                     *
   * SYSTEM.COLLECTIONS.GENERIC - namespace consist of interfaces and classes for creation *
   *                              strictly typification collections (EXP: Arrays, Task     *
@@ -35,47 +35,51 @@ using System;
   * will be operate and be visible. Anywhere else to them don't be access (except here)!  *  
   *****************************************************************************************
 */
+// OUR NAMESPACE AREA BEGIN //
 namespace Hello_world
 {
-  /*
-    *****************************************************************************************
-	* EACH program MUST have don't less than one MainClass contained a STATIC MAIN function *
-	* There's PROGRAM - is a name of MainClass that contain MAIN function                   *
-	*****************************************************************************************
-  */
+/*
+  *****************************************************************************************
+  * EACH program MUST have don't less than one MainClass contained a STATIC MAIN function *
+  * There's PROGRAM - is a name of MainClass that contain MAIN function                   *
+  *****************************************************************************************
+*/
+  // CLASS DEFINITIONS BEGIN //
   class Program
   {
-    /*
-	  *****************************************************************************************
-      *                                  The MAIN function                                    *
-      *****************************************************************************************
-      * STATIC or PUBLIC                                                                      *
-      * STATIC - include in program all methods, features and constants                       *
-      * PUBLIC - give access to all classes and methods into the function                     *
-      *---------------------------------------------------------------------------------------*
-      * MAIN - the major function in program (Start point of program)                         *
-      * VOID - data type that function should be return after operating (nothing return smth.)*
-      * ( ... ) - there is write everything we wanna take to the function                     *
-      * ARGS - name of array. (Show that Main function might get some values throw array)     *
-      * STRING[] - is a data type of array (contains string values of data).                  *
-      *****************************************************************************************
-    */
+/*
+  *****************************************************************************************
+  *                                  The MAIN function                                    *
+  *****************************************************************************************
+  * STATIC or PUBLIC                                                                      *
+  * STATIC - include in program all methods, features and constants                       *
+  * PUBLIC - give access to all classes and methods into the function                     *
+  *---------------------------------------------------------------------------------------*
+  * MAIN - the major function in program (Start point of program)                         *
+  * VOID - data type that function should be return after operating (nothing return)      *
+  * ( ... ) - there is write everything we wanna take to the function                     *
+  * ARGS - name of array. (Show that Main function might get some values throw array)     *
+  * STRING[] - is a data type of array (contains string values of data).                  *
+  *****************************************************************************************
+*/
     // MAIN FUNCTION BEGIN //
     static void Main(string[] args)
     {
       // CODE/INSTRUCTIONS BEGIN //
-      /*
-        *****************************************************************************************
-	    * For access to features of console we should write a full "address" name where the     *
-	    * class is located.       EXP: System.Console.Write("Hello World \n");                  *
-        * WHERE: SYSTEM - is a namespace, CONSOLE - is a class, WRITE (WRITELINE) - is a method *
-        * of class                                                                              *
-        *---------------------------------------------------------------------------------------*
-        * WRITE     - is a method displayed our information in console.                         *
-        * WRITELINE - the same as previous, but include end line escape consequence in the end  *
-        *             of a string.                                                              * 
-        *****************************************************************************************
-      */
+/*
+  *****************************************************************************************
+  * For access to features of console we should write a full "address" name where the     *
+  * class is located.                                                                     *
+  * EXP:   System.Console.Write("Hello World \n");                                        *
+  * WHERE: SYSTEM          - is a namespace,                                              *
+  *        CONSOLE         - is a class,                                                  *
+  *        WRITE/WRITELINE - is a method of class                                         *
+  *---------------------------------------------------------------------------------------*
+  * WRITE     - is a method displayed our information in console.                         *
+  * WRITELINE - the same as previous, but include end line escape consequence in the end  *
+  *             of a string.                                                              * 
+  *****************************************************************************************
+*/
             Console.Write("Hello World	\n");
             Console.WriteLine("Привет, Мир!");
 
@@ -83,4 +87,7 @@ namespace Hello_world
     }
 	// MAIN FUNCTION END //
   }
+  // CLASS DEFINITIONS END //
 }
+// OUR NAMESPACE AREA END //
+
